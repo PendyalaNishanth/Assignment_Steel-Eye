@@ -46,6 +46,6 @@ WrappedListComponent.propTypes = {
 
 Q3) Please fix, optimize, and/or modify the component as much as you think is necessary.
 
-[react.txt](https://github.com/PendyalaNishanth/Assignment_Steel-Eye/files/9658138/react.txt)
+https://github.com/PendyalaNishanth/new_code/blob/main/React.js
 
 
