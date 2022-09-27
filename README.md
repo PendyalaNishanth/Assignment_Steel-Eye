@@ -1,6 +1,7 @@
 # Assignment_Steel-Eye
 
 Q1) Explain what the simple List component does.
+
 List Component is used to display List with some texts as List items. The wrappedListComponent returns a memorized components list. It  accepts an array of objects as props. Each object in this list has a text property. The List component renders the value of the text property of all the elements present in the list prop as an unordered list. For each items in the array, it maps through all and displays their content on the screen with a background color. By default, each element of the unordered list has a red background which changes to green when the element is clicked. This behavior might be used to tell the user that a particular element is being selected. 
 
 
@@ -48,7 +49,7 @@ Q3) Please fix, optimize, and/or modify the component as much as you think is ne
 import React, { useState, useEffect, memo } from 'react';
 import PropTypes from 'prop-types';
 
-// Single List Item
+
  
 const WrappedSingleListItem = ({
     index,
@@ -76,7 +77,7 @@ WrappedSingleListItem.propTypes = {
 
 const SingleListItem = memo(WrappedSingleListItem);
 
-// List Component
+
  
 const WrappedListComponent = ({ items, }) => {
 
