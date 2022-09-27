@@ -49,8 +49,6 @@ Q3) Please fix, optimize, and/or modify the component as much as you think is ne
 import React, { useState, useEffect, memo } from 'react';
 import PropTypes from 'prop-types';
 
-
- 
 const WrappedSingleListItem = ({
     index,
     isSelected,
@@ -67,7 +65,6 @@ const WrappedSingleListItem = ({
     );
 };
 
- 
 WrappedSingleListItem.propTypes = {
     index: PropTypes.number,
     isSelected: PropTypes.bool,
@@ -77,8 +74,6 @@ WrappedSingleListItem.propTypes = {
 
 const SingleListItem = memo(WrappedSingleListItem);
 
-
- 
 const WrappedListComponent = ({ items, }) => {
 
     const [selectedIndex, setSelectedIndex] = useState();
@@ -105,9 +100,7 @@ const WrappedListComponent = ({ items, }) => {
         </ul>
     )
 };
-
-         
-         
+        
 WrappedListComponent.propTypes = {
     items: PropTypes.arrayOf(PropTypes.shape({
         text: PropTypes.string.isRequired,
